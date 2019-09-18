@@ -1,0 +1,131 @@
+{
+  "$version": "test-case/v1",
+  "steps": [
+    {
+      "key": "VE0hralMazeg4wor7EiwP",
+      "ignored": true,
+      "name": "Http Request delete",
+      "action": {
+        "key": "R4FAxmXLXs3ApnC3oxJ7b",
+        "type": "http-request",
+        "properties": {
+          "Method": "DELETE",
+          "Body": "{\"Content\":null,\"FilePath\":null,\"Mode\":\"raw\"}",
+          "Url": "http://dummy.restapiexample.com/api/v1/delete/2/"
+        }
+      },
+      "verifications": []
+    },
+    {
+      "key": "1rPQJneq2Vz7tNUuUhHapC",
+      "name": "Http Request get",
+      "action": {
+        "key": "1nl3j1e3gBXou5M6MGg3Af",
+        "type": "http-request",
+        "properties": {
+          "Method": "GET",
+          "Body": "{\"Content\":null,\"FilePath\":null,\"Mode\":\"raw\"}",
+          "Url": "http://dummy.restapiexample.com/api/v1/employees",
+          "Headers": "[{\"\":null}]"
+        }
+      },
+      "verifications": []
+    },
+    {
+      "key": "3Ueeq7mLA5f1Nj4HpaJTdo",
+      "ignored": true,
+      "name": "Http Request post",
+      "action": {
+        "key": "4pTChg21vYuifSqukbp4cd",
+        "type": "http-request",
+        "properties": {
+          "Method": "POST",
+          "Body": "{\"Content\":null,\"FilePath\":null,\"Mode\":\"raw\"}",
+          "Url": "http://dummy.restapiexample.com/api/v1/create"
+        }
+      },
+      "verifications": []
+    },
+    {
+      "key": "3YDXimzzODdQq3ANjH4uwz",
+      "ignored": true,
+      "name": "Http Request get2",
+      "condition": {
+        "key": "5IsMmXmuhBxVzvZZZYObrY",
+        "type": "verify",
+        "properties": {
+          "SourceVariable": "StatusCode",
+          "SourcePathType": "none",
+          "OperationType": "is-equal-number",
+          "Expectation": "200",
+          "IgnoreCase": false,
+          "SourcePath": null
+        }
+      },
+      "action": {
+        "key": "21nYbuXVrmP8Ijw8zmpSif",
+        "type": "http-request",
+        "properties": {
+          "Method": "GET",
+          "Body": "{\"Content\":null,\"FilePath\":null,\"Mode\":\"raw\"}",
+          "Url": "https://jsonplaceholder.typicode.com/posts/1"
+        }
+      },
+      "verifications": [
+        {
+          "key": "p6XedM08f60kZ4NYexkVN",
+          "type": "verify",
+          "properties": {
+            "SourceVariable": "StatusCode",
+            "SourcePathType": "none",
+            "OperationType": "is-equal-number",
+            "Expectation": "200",
+            "IgnoreCase": false,
+            "SourcePath": null
+          }
+        }
+      ]
+    },
+    {
+      "key": "6MTI9ATlrP7tgzCZnTfnd3",
+      "ignored": true,
+      "name": "Http Request delete2",
+      "action": {
+        "key": "3O8dV5MNnuEgT3dfASyHVS",
+        "type": "http-request",
+        "properties": {
+          "Method": "DELETE",
+          "Body": "{\"Content\":null,\"FilePath\":null,\"Mode\":\"raw\"}",
+          "Url": "https://jsonplaceholder.typicode.com/posts/1"
+        }
+      },
+      "verifications": []
+    },
+    {
+      "key": "6VMxXuU7YUkm9fhpl44dfK",
+      "name": "GoTo",
+      "action": {
+        "key": "6gn9HaTxkY6Zt01pYM3vnu",
+        "type": "goto",
+        "properties": {}
+      },
+      "verifications": []
+    },
+    {
+      "key": "6gHa4xKXNNoYqNpLPAUJFt",
+      "name": "Set Variable",
+      "action": {
+        "key": "1c3Tl3xL50KJSECuQUfAIw",
+        "type": "set-variable",
+        "properties": {
+          "TargetLevel": 2,
+          "TransformationType": "none",
+          "SourceVariable": "Body",
+          "SourcePathType": "none"
+        }
+      },
+      "verifications": []
+    }
+  ],
+  "variables": {}
+}

@@ -1,0 +1,45 @@
+{
+  "__type": "ArtOfTest.WebAii.Design.Execution.Profiler.ProfilerMetadataConfigurationSet",
+  "__value": {
+    "_bFirstTimeUserConfigurationComplete": true,
+    "Metadata": {
+      "__type": "ArtOfTest.WebAii.Design.Execution.Profiler.ProfilerResultsMetadata",
+      "__value": {
+        "_resultsId": "00000000-0000-0000-0000-000000000000",
+        "_ownerTestId": "00000000-0000-0000-0000-000000000000",
+        "_startTime": "0001-01-01T00:00:00",
+        "_totalTime": "00:00:00",
+        "_bCollectProfilerSampleData": true,
+        "_strDescription": null,
+        "_strFolder": "D:\\TS\\New folder",
+        "_strFilePath": null,
+        "_browserType": 1,
+        "_browserVersion": null,
+        "_bClearBrowserCacheBeforeRun": false,
+        "_bWarmUpServerBeforeRun": false
+      }
+    },
+    "ClientPluginConfigurations": {},
+    "Servers": {
+      "53377223-04aa-4c78-a30b-53de88d618c2": {
+        "__type": "ArtOfTest.WebAii.Design.Execution.Profiler.ProfilerServerMetadata",
+        "__value": {
+          "CollectProfilerSampleData": true,
+          "Description": null,
+          "Name": "PC_Cat",
+          "ProfilerPluginSettings": {
+            "a43b256e-1b44-415f-ade4-6e3ea44eb755": {
+              "__type": "ArtOfTest.WebAii.Design.Execution.Profiler.PerformanceCounterProfiler.PerformanceCounterConfigurationSettings",
+              "__value": []
+            }
+          },
+          "ServerId": "53377223-04aa-4c78-a30b-53de88d618c2",
+          "ServerPath": "192.168.36.43",
+          "ServerPort": 55555,
+          "ServerType": 0
+        }
+      }
+    },
+    "Version": "2019.2.603.0"
+  }
+}
